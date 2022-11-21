@@ -1,0 +1,54 @@
+object Form3: TForm3
+  Left = 508
+  Height = 289
+  Top = 346
+  Width = 337
+  Caption = '帳號'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.2.4.0'
+  object ListBoxUserList: TListBox
+    Left = 16
+    Height = 209
+    Top = 64
+    Width = 312
+    ItemHeight = 0
+    MultiSelect = True
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 16
+    Width = 103
+    Caption = 'Ctrl+左鍵選擇'
+    Font.CharSet = CHINESEBIG5_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ButtonEnter: TButton
+    Left = 136
+    Height = 37
+    Top = 10
+    Width = 89
+    Caption = '確認'
+    OnClick = ButtonEnterClick
+    TabOrder = 1
+  end
+  object ButtonCancel: TButton
+    Left = 239
+    Height = 37
+    Top = 10
+    Width = 89
+    Caption = '取消'
+    OnClick = ButtonCancelClick
+    TabOrder = 2
+  end
+end

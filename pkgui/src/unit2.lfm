@@ -1,0 +1,130 @@
+object Form2: TForm2
+  Left = 516
+  Height = 241
+  Top = 367
+  Width = 618
+  Caption = 'Form2'
+  ClientHeight = 241
+  ClientWidth = 618
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnConstrainedResize = FormConstrainedResize
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  LCLVersion = '2.2.4.0'
+  object LabelTitle: TLabel
+    Left = 16
+    Height = 20
+    Top = 8
+    Width = 48
+    Caption = '標題：'
+    Font.CharSet = CHINESEBIG5_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelFiles: TLabel
+    Left = 16
+    Height = 20
+    Top = 40
+    Width = 48
+    Caption = '附加：'
+    Font.CharSet = CHINESEBIG5_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object EditTitle: TEdit
+    Left = 63
+    Height = 23
+    Top = 8
+    Width = 204
+    TabOrder = 0
+  end
+  object ComboBoxFiles: TComboBox
+    Left = 63
+    Height = 23
+    Top = 40
+    Width = 204
+    ItemHeight = 15
+    OnClick = ComboBoxFilesClick
+    OnEnter = ComboBoxFilesEnter
+    TabOrder = 1
+  end
+  object ButtonInsert: TButton
+    Left = 435
+    Height = 23
+    Top = 40
+    Width = 92
+    Caption = '插入內容'
+    OnClick = ButtonInsertClick
+    TabOrder = 2
+  end
+  object ButtonDelete: TButton
+    Left = 328
+    Height = 23
+    Top = 40
+    Width = 99
+    Caption = '刪除文件'
+    OnClick = ButtonDeleteClick
+    TabOrder = 3
+  end
+  object ButtonSend: TButton
+    Left = 272
+    Height = 23
+    Top = 8
+    Width = 47
+    Caption = '送出'
+    OnClick = ButtonSendClick
+    TabOrder = 4
+  end
+  object ButtonUpload: TButton
+    Left = 272
+    Height = 23
+    Top = 40
+    Width = 47
+    Caption = '上傳'
+    OnClick = ButtonUploadClick
+    TabOrder = 5
+  end
+  object ButtonDebug: TButton
+    Left = 432
+    Height = 24
+    Top = 8
+    Width = 99
+    Caption = '測試'
+    OnClick = ButtonDebugClick
+    TabOrder = 6
+  end
+  object MemoContent: TMemo
+    Left = 16
+    Height = 145
+    Top = 79
+    Width = 592
+    ScrollBars = ssAutoBoth
+    TabOrder = 7
+  end
+  object ButtonMultipleSendWorks: TButton
+    Left = 328
+    Height = 24
+    Top = 8
+    Width = 99
+    Caption = '批量繳交'
+    OnClick = ButtonMultipleSendWorksClick
+    TabOrder = 8
+  end
+  object OpenDialogFiles: TOpenDialog
+    FileName = 'D:\Jetbrains\ILMS\pkgui\src\unit3.pas'
+    InitialDir = 'D:\Jetbrains\ILMS\pkgui\src\'
+    Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
+    Left = 544
+    Top = 16
+  end
+end
