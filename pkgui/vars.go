@@ -13,10 +13,11 @@ var (
 )
 
 type Settings struct {
-	Username   string `json:"username"`
-	Password   string `json:"password"`
-	MaxConnect int    `json:"maxConnect"`
-	Debug      bool   `json:"debug,omitempty"`
+	Username    string `json:"username"`
+	Password    string `json:"password"`
+	MaxConnect  int    `json:"maxConnect"`
+	Debug       bool   `json:"debug,omitempty"`
+	IottalkTest bool   `json:"iottalkTest"`
 }
 
 type TempWorkContent struct {

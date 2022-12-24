@@ -272,3 +272,14 @@ func getUserInfoFile() {
 		Form1.ButtonLogout.SetEnabled(true)
 	}
 }
+
+func iottalkTest() {
+	response, err := http.Get("http://iottalk.vip:9999/")
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	if response.StatusCode == 200 {
+		vcl.ShowMessage("http://iottalk.vip:9999/ 已正常連線")
+	}
+}

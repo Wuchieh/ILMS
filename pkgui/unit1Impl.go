@@ -286,6 +286,9 @@ func (f *TForm1) OnFormCloseQuery(sender vcl.IObject, canClose *bool) {
 
 func (f *TForm1) OnFormShow(sender vcl.IObject) {
 	getUserInfoFile()
+	if setting.IottalkTest {
+		iottalkTest()
+	}
 	//for i, v := range usernameList {
 	//	fmt.Println(i)
 	//	for _, v2 := range v.ClassList {
