@@ -4,7 +4,7 @@
 
 ## 本專案大多使用原生的庫 只有UI設計及網頁資料分析使用外部庫
 ### UI設計採用的是 [GoVCL](https://github.com/ying32/govcl)
-### 網頁資料分析採用的是 [GoQuery](https://github.com/ying32/govcl)
+### 網頁資料分析採用的是 [GoQuery](https://github.com/PuerkitoBio/goquery)
 #
 ## 介紹 
 ### 此工具支援高併發讀取網頁內容以及上傳檔案
